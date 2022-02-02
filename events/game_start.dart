@@ -1,6 +1,7 @@
 import 'dart:io';
 
 import '../char/char.dart';
+import 'stats/stats.dart';
 
 class GameStart {
   List races = ["human"];
@@ -48,6 +49,7 @@ class GameStart {
             "hello ${Character.name}\nso you are ${Character.race}\nand your jobs is ${Character.jobs}");
         print("welcome to Barnia i hope your adventure will be awesome");
         jobIsEmpety = !jobIsEmpety;
+        Stats().calculateCreateChar();
       }
     }
   }
